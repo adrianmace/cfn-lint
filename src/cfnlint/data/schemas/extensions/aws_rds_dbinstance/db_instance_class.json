@@ -2099,97 +2099,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "aurora-mysql",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -2420,7 +2329,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -2693,7 +2601,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -2966,7 +2873,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -3239,7 +3145,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -5712,6 +5617,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -7814,6 +7720,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -9198,6 +9105,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -12156,6 +12064,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -15739,97 +15648,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "aurora-postgresql",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -16060,7 +15878,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -16333,7 +16150,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -16606,7 +16422,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -16879,7 +16694,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -19352,6 +19166,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -21454,6 +21269,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -22838,6 +22654,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -25796,6 +25613,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -29379,97 +29197,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "custom-sqlserver-ee",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -29700,7 +29427,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -29973,7 +29699,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -30246,7 +29971,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -30519,7 +30243,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -32992,6 +32715,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -35094,6 +34818,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -36478,6 +36203,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -39436,6 +39162,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -43019,97 +42746,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "custom-sqlserver-se",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -43340,7 +42976,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -43613,7 +43248,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -43886,7 +43520,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -44159,7 +43792,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -46632,6 +46264,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -48734,6 +48367,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -50118,6 +49752,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -53076,6 +52711,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -56659,97 +56295,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "custom-sqlserver-web",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -56980,7 +56525,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -57253,7 +56797,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -57526,7 +57069,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -57799,7 +57341,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -60272,6 +59813,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -62374,6 +61916,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -63758,6 +63301,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -66716,6 +66260,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -70299,97 +69844,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "db2-ae",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -70620,7 +70074,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -70893,7 +70346,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -71166,7 +70618,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -71439,7 +70890,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -73912,6 +73362,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -76014,6 +75465,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -77398,6 +76850,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -80356,6 +79809,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -83939,97 +83393,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "db2-se",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -84260,7 +83623,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -84533,7 +83895,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -84806,7 +84167,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -85079,7 +84439,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -87552,6 +86911,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -89654,6 +89014,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -91038,6 +90399,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -93996,6 +93358,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -97579,97 +96942,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "mariadb",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -97900,7 +97172,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -98173,7 +97444,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -98446,7 +97716,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -98719,7 +97988,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -101192,6 +100460,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -103294,6 +102563,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -104678,6 +103948,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -107636,6 +106907,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -111219,97 +110491,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "mysql",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -111540,7 +110721,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -111813,7 +110993,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -112086,7 +111265,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -112359,7 +111537,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -114832,6 +114009,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -116934,6 +116112,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -118318,6 +117497,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -121276,6 +120456,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -124859,97 +124040,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "postgres",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -125180,7 +124270,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -125453,7 +124542,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -125726,7 +124814,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -125999,7 +125086,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -128472,6 +127558,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -130574,6 +129661,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -131958,6 +131046,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -134916,6 +134005,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -138499,97 +137589,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "sqlserver-ee",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -138820,7 +137819,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -139093,7 +138091,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -139366,7 +138363,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -139639,7 +138635,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -142112,6 +141107,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -144214,6 +143210,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -145598,6 +144595,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -148556,6 +147554,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -152139,97 +151138,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "sqlserver-ex",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -152460,7 +151368,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -152733,7 +151640,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -153006,7 +151912,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -153279,7 +152184,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -155752,6 +154656,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -157854,6 +156759,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -159238,6 +158144,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -162196,6 +161103,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -165779,97 +164687,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "sqlserver-se",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -166100,7 +164917,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -166373,7 +165189,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -166646,7 +165461,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -166919,7 +165733,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -169392,6 +168205,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -171494,6 +170308,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -172878,6 +171693,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -175836,6 +174652,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -179419,97 +178236,6 @@
       "type": "string"
      },
      "EngineVersion": {
-      "pattern": "^(13\\.16\\..+|13\\.16)$",
-      "type": "string"
-     }
-    },
-    "required": [
-     "Engine",
-     "EngineVersion",
-     "DBInstanceClass"
-    ]
-   },
-   "then": {
-    "properties": {
-     "DBInstanceClass": {
-      "enum": [
-       "db.r5.12xlarge",
-       "db.r5.16xlarge",
-       "db.r5.24xlarge",
-       "db.r5.2xlarge",
-       "db.r5.4xlarge",
-       "db.r5.8xlarge",
-       "db.r5.large",
-       "db.r5.xlarge",
-       "db.r6g.12xlarge",
-       "db.r6g.16xlarge",
-       "db.r6g.2xlarge",
-       "db.r6g.4xlarge",
-       "db.r6g.8xlarge",
-       "db.r6g.large",
-       "db.r6g.xlarge",
-       "db.r6i.12xlarge",
-       "db.r6i.16xlarge",
-       "db.r6i.24xlarge",
-       "db.r6i.2xlarge",
-       "db.r6i.32xlarge",
-       "db.r6i.4xlarge",
-       "db.r6i.8xlarge",
-       "db.r6i.large",
-       "db.r6i.xlarge",
-       "db.r7g.12xlarge",
-       "db.r7g.16xlarge",
-       "db.r7g.2xlarge",
-       "db.r7g.4xlarge",
-       "db.r7g.8xlarge",
-       "db.r7g.large",
-       "db.r7g.xlarge",
-       "db.r7i.12xlarge",
-       "db.r7i.16xlarge",
-       "db.r7i.24xlarge",
-       "db.r7i.2xlarge",
-       "db.r7i.48xlarge",
-       "db.r7i.4xlarge",
-       "db.r7i.8xlarge",
-       "db.r7i.large",
-       "db.r7i.xlarge",
-       "db.r8g.12xlarge",
-       "db.r8g.16xlarge",
-       "db.r8g.24xlarge",
-       "db.r8g.2xlarge",
-       "db.r8g.48xlarge",
-       "db.r8g.4xlarge",
-       "db.r8g.8xlarge",
-       "db.r8g.large",
-       "db.r8g.xlarge",
-       "db.serverless",
-       "db.t3.large",
-       "db.t3.medium",
-       "db.t4g.large",
-       "db.t4g.medium",
-       "db.x2g.12xlarge",
-       "db.x2g.16xlarge",
-       "db.x2g.2xlarge",
-       "db.x2g.4xlarge",
-       "db.x2g.8xlarge",
-       "db.x2g.large",
-       "db.x2g.xlarge"
-      ]
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "DBInstanceClass": {
-      "type": "string"
-     },
-     "Engine": {
-      "const": "sqlserver-web",
-      "type": "string"
-     },
-     "EngineVersion": {
       "pattern": "^(13\\.18\\..+|13\\.18)$",
       "type": "string"
      }
@@ -179740,7 +178466,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -180013,7 +178738,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -180286,7 +179010,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -180559,7 +179282,6 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
-       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -183032,6 +181754,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -185134,6 +183857,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -186518,6 +185242,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
@@ -189476,6 +188201,7 @@
        "db.r8gd.8xlarge",
        "db.r8gd.large",
        "db.r8gd.xlarge",
+       "db.serverless",
        "db.t3.2xlarge",
        "db.t3.large",
        "db.t3.medium",
